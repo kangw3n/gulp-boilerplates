@@ -9,7 +9,12 @@ var reload = browserSync.reload;
 gulp.task('serve', ['sass'], function() {
 
   browserSync.init({
-    server: "./client"
+    server: "./client",
+    ghostMode: {
+      clicks: true,
+      forms: true,
+      scroll: true
+    }
   });
 
   gulp.watch("dev/sass/*.scss", ['sass']);
