@@ -1,0 +1,20 @@
+$basefont: "Times New Roman", Arial, Verdana, Times;
+$basecolor: yellow;
+$baseHeading: 15px;
+$baseContainer: 960px;
+$secondarycolor: #1f1da1;
+
+
+
+body {
+  background-color: $basecolor;
+
+  h1 {
+    font-size: $baseHeading;
+  }
+
+  .container {
+    width: $baseContainer;
+    color: $secondarycolor;
+  }
+}

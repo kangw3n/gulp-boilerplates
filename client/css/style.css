@@ -1,0 +1,7 @@
+body {
+  background-color: yellow; }
+  body h1 {
+    font-size: 15px; }
+  body .container {
+    width: 960px;
+    color: #1f1da1; }
