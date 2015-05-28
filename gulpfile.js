@@ -14,7 +14,7 @@ gulp.task('serve', ['sass'], function() {
       clicks: true,
       forms: true,
       scroll: true
-    }
+    }//browserSync
   });
 
   gulp.watch('dev/sass/*.scss', ['sass']);
