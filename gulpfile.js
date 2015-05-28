@@ -9,7 +9,7 @@ var reload = browserSync.reload;
 gulp.task('serve', ['sass'], function() {
 
   browserSync.init({
-    server: "./client",
+    server: './client',
     ghostMode: {
       clicks: true,
       forms: true,
@@ -17,16 +17,16 @@ gulp.task('serve', ['sass'], function() {
     }
   });
 
-  gulp.watch("dev/sass/*.scss", ['sass']);
-  gulp.watch("dev/js/*.js", ['scripts']);
-  gulp.watch("client/*.html").on('change', reload);
+  gulp.watch('dev/sass/*.scss', ['sass']);
+  gulp.watch('dev/js/*.js', ['scripts']);
+  gulp.watch('client/*.html').on('change', reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-  return gulp.src("dev/sass/*.scss")
+  return gulp.src('dev/sass/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest("client/css"))
+    .pipe(gulp.dest('client/css'))
     .pipe(reload({
       stream: true
     }));
